@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azucar Morena</title>
+</head>
+<body>
+
+    <nav>
+        <a href="/" class="d-flex">
+            <img src="assets/logo.jpg" alt="logo" width="100" height="'100">
+            <h2>Azucar Morena</h2>
+        </a>
+        <a href="/dashboard.html">Pedidos</a>
+    </nav>
+
+    <form>
+        
+        <fieldset class="d-flex">
+            <legend class="text-center">Informacion del pastel</legend>
+
+            <div class="d-flex">
+                <label class="label">Selecciona los sabores</label>
+                <label><input name="sabores" type="checkbox" value="chocolate">Chocolate</label>
+                <label><input name="sabores" type="checkbox" value="nuez">Nuez</label>
+                <label><input name="sabores" type="checkbox" value="platano">Platano</label>
+                <label><input name="sabores" type="checkbox" value="zanahora">zanahora</label>
+            </div>
+
+            <div class="d-flex">
+                <label class="label">Selecciona los adronos</label>
+                <label><input name="adornos" type="checkbox" value="chipas">Chispas de chocolate</label>
+                <label><input name="adornos" type="checkbox" value="m&m">M&Ms</label>
+                <label><input name="adornos" type="checkbox" value="ferrero">Ferrero</label>
+            </div>
+
+            <div>
+                <label>Tamano</label>
+                <select>
+                    <option>Chico</option>
+                    <option>Mediano</option>
+                    <option>Grande</option>
+                    <option>Extra Grande</option>
+                </select>
+            </div>
+            
+            <div>
+                <label>Fecha de entrega</label>
+                <input type="date" name="fecha">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend class="text-center">Informacion de contacto</legend>
+            <div>
+                <label>Nombre</label>
+                <input type="text" name="nombre">
+            </div>
+            <div>
+                <label>Apellido</label>
+                <input type="text" name="apellido">
+            </div>
+
+            <div>
+                <label>Numero de telefono</label>
+                <input type="number" name="telefono">
+            </div>
+
+            <div>
+                <label>Correo</label>
+                <input type="email" name="email">
+            </div>
+
+            <div>
+                <label>Direccion</label>
+                <input type="text" name="direccion">
+            </div>
+
+        </fieldset>
+        
+        <fieldset>
+            <legend class="text-center">Rsumen del pastel</legend>
+            <ul>
+                <li>
+                    <label>Sabores:</label>
+                    <span id="sabores">Chocolate, Platano</span>
+                </li>
+                <li>
+                    <label>Adornos:</label>
+                    <span id="adornos">Ferrero, Chipas de chocolate</span>
+                </li>
+                <li>
+                    <label>Tamano:</label>
+                    <span id="tamano">Extra Grande</span>
+                </li>
+                <li>
+                    <label>Fecha de entrega:</label>
+                    <span id="fecha">Miercoles, 22 de Marzo del 2022</span>
+                </li>
+                <li>
+                    <label>Nombre:</label>
+                    <span id="nombre">Eduardo Daniel Meza Ledezma</span>
+                </li>
+            </ul>
+        </fieldset>
+        
+
+        <input class="btn-enviar" type="submit" value="Ordenar">
+        
+
+    </form>
+
+    <footer>
+        <h3>Encuentranos</h3>
+        <p>
+            Direccion de preba calle #200 93229
+        </p>
+        <p>
+            Telefono: (55) 5555-5555
+        </p>
+        <p>
+            Horario: Lunes a Sabado de 9:00 am a 9:00 pm
+        </p>
+    </footer>
+    
+</body>
+</html>
